@@ -261,7 +261,7 @@ footer a{text-decoration-color:var(--azure);text-underline-offset:3px}
         for(var j=0;j<s.length;j++){ if(i>0||s[j][0]>t.m){next=(i===0?"oggi":i===1?"domani":["domenica","lunedì","martedì","mercoledì","giovedì","venerdì","sabato"][d])+" alle "+fmt(s[j][0]);break;} }
       }
       st.innerHTML='<span class="dot"></span><b>Ora siamo chiusi</b>. Riapriamo '+next+'. Intanto scrivici su WhatsApp o via email.';
-      note.textContent="(telefono negli orari di apertura)";
+      note.textContent="(telefonare solo negli orari di apertura)";
     }
     document.querySelectorAll("#hours li").forEach(function(li){
       li.classList.toggle("today",li.dataset.d.split(",").indexOf(String(t.d))>-1);
